@@ -1,4 +1,4 @@
-<div align="center">
+<br><div align="center">
 <h3>custom yt music theme</h3>
 a custom css theme for the youtube music desktop app.
 <br>
@@ -14,6 +14,7 @@ the base template for this theme was originally created by [oceanicsquirrel](htt
 <br>
 
 <h4>installation instructions</h4>
+
 use this theme with the [peardesktop yt music app](https://github.com/pear-devs/pear-desktop) (by pear-devs).
 
 ##### pear desktop
