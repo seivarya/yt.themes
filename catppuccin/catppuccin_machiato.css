@@ -1,0 +1,411 @@
+html:not(.style-scope) {
+    /*
+    these are the custom variables for the Catppuccin Macchiato theme.
+    for making a new theme just play around with these variables and voila! you've got a new theme!
+    [don't forget to submit a PR :)]
+    */
+
+    --cust-ytmusic-play-nav-color: #1e2030;
+    --cust-ytmusic-dark-background: #24273a;
+    --cust-ytmusic-dark-foreground: #181926;
+
+    --cust-ytmusic-light-text-1: #cad3f5;
+    --cust-ytmusic-light-2: #8aadf4;
+    --cust-ytmusic-light-3: #b8c0e0;
+    --cust-ytmusic-light-4: #939ab7;
+    --cust-ytmusic-light-5: #8bd5ca;
+
+    --cust-ytmusic-medium-1: #494d64;
+    --cust-ytmusic-medium-2: #5b6078;
+    --cust-ytmusic-medium-3: #c6a0f6;
+    --cust-ytmusic-medium-4: #5b6078;
+    --cust-ytmusic-medium-5: #8087a2;
+
+    --cust-ytmusic-subscribe-color: #c6a0f6;
+    --cust-ytmusic-nowplaying-color: #8bd5ca;
+    --cust-ytmusic-playbutton-color: #8aadf4;
+    --cust-ytmusic-tertiary-nav-button-color: #8aadf4;
+
+    --cust-ytmusic-main-text-1: #cad3f5;
+    --cust-ytmusic-header-text-1: #cad3f5;
+    --cust-ytmusic-header-text-2: #c6a0f6;
+
+    --cust-ytmusic-scroll-width: 0px;
+
+    /* [Variables] for some reason not using !important doesn't work in the desktop app. the template i picked this from doesn't use !important for some reason. */
+    --idk-yet: inherit !important;
+
+    --ytmusic-color-black1: var(--cust-ytmusic-dark-foreground) !important;
+    --ytmusic-color-black4: var(--cust-ytmusic-dark-background) !important;
+
+    --ytmusic-color-blackpure: var(--idk-yet) !important;
+    --ytmusic-color-blackpure-alpha0: var(--idk-yet) !important;
+    --ytmusic-color-blackpure-alpha10: var(--idk-yet) !important;
+    --ytmusic-color-blackpure-alpha60: var(--idk-yet) !important;
+
+    --ytmusic-color-grey1: var(--cust-ytmusic-light-3) !important;
+    --ytmusic-color-grey2: var(--cust-ytmusic-light-2) !important;
+    --ytmusic-color-grey3: var(--cust-ytmusic-medium-4) !important;
+    --ytmusic-color-grey4: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-grey5: var(--cust-ytmusic-medium-2) !important;
+
+    --ytmusic-color-white1: var(--cust-ytmusic-light-text-1) !important;
+    --ytmusic-color-white1-alpha10: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-white1-alpha15: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-white1-alpha20: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-white1-alpha30: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-white1-alpha50: var(--cust-ytmusic-light-4) !important;
+    --ytmusic-color-white1-alpha70: var(--cust-ytmusic-medium-1) !important;
+
+    --ytmusic-static-brand-red: var(--cust-ytmusic-light-text-1) !important;
+
+    /* [Variables] loadingbar */
+    --yt-spec-themed-blue: var(--cust-ytmusic-light-5) !important;
+    --yt-spec-dark-blue: var(--cust-ytmusic-medium-5) !important;
+    --yt-spec-text-secondary: var(--cust-ytmusic-medium-5) !important;
+    --ytmusic-setting-item-toggle-active: var(
+        --cust-ytmusic-light-2
+    ) !important;
+
+    --ytmusic-brand-link-text: var(--idk-yet) !important;
+    --ytmusic-overlay-background-brand: var(--idk-yet) !important;
+    --ytmusic-focus-active: var(--idk-yet) !important;
+
+    --ytmusic-detail-header: var(--idk-yet) !important;
+    --ytmusic-dialog-background-color: var(
+        --cust-ytmusic-dark-background
+    ) !important;
+    --yt-spec-brand-link-text: var(--cust-ytmusic-medium-5) !important;
+
+    --ytmusic-caption-1_-_color: var(--cust-ytmusic-medium-3) !important;
+
+    --ytmusic-scrollbar-width: var(--cust-ytmusic-scroll-width) !important;
+    --ytd-scrollbar-width: var(--cust-ytmusic-scroll-width) !important;
+    --ytd-scrollbar-scrubber_-_background: var(--cust-ytmusic-dark-background);
+}
+
+/* [Icons] the icons they added; i think its not present on the web version */
+i.material-icons {
+    color: var(--cust-ytmusic-tertiary-nav-button-color) !important;
+}
+
+i.material-icons:hover {
+    color: var(--cust-ytmusic-tertiary-nav-button-color) !important;
+}
+
+/* [General Body] */
+body {
+    background: var(--cust-ytmusic-dark-background) !important;
+}
+
+/* [Top Navigation Bar] */
+ytmusic-nav-bar {
+    background: var(--cust-ytmusic-play-nav-color) !important;
+}
+
+/* [Top Navigation Bar] hide the youtube logo at the top left of the app. comment out if you want to show it*/
+.yt-simple-endpoint[aria-label="Home"] {
+    visibility: hidden !important;
+}
+
+/* [Pivot Bar] highlighted word */
+ytmusic-pivot-bar-item-renderer:hover,
+ytmusic-pivot-bar-item-renderer.iron-selected {
+    color: var(--cust-ytmusic-light-5) !important;
+}
+
+/* [Pivot Bar] non-selected item */
+ytmusic-pivot-bar-item-renderer {
+    color: var(--cust-ytmusic-light-4) !important;
+}
+
+/* [Search] search box */
+ytmusic-search-box {
+    color: var(--cust-ytmusic-light-4) !important;
+}
+
+/* [Pop-ups/Chips] color 'new recommendations' pop-up*/
+a.ytmusic-content-update-chip {
+    color: var(--ytmusic-color-black4) !important;
+    background-color: var(--ytmusic-color-grey2) !important;
+}
+
+/* [Detail Header] detail header */
+ytmusic-detail-header-renderer {
+    background-color: var(--ytmusic-color-black4) !important;
+}
+
+/* [Detail Header] detail header title */
+ytmusic-detail-header-renderer .title {
+    color: var(--cust-ytmusic-light-text-1) !important;
+}
+
+/* [Player Page] player page */
+ytmusic-player-page {
+    background-color: var(--ytmusic-color-black4) !important;
+}
+
+/* [Detail Header] detail header */
+ytmusic-data-bound-header-renderer {
+    background-color: var(--cust-ytmusic-play-nav-color) !important;
+}
+
+/* [List Items] list item */
+ytmusic-list-item-renderer {
+    background-color: var(--ytmusic-color-black1) !important;
+}
+
+/* [List Items] responsive list item */
+ytmusic-responsive-list-item-renderer {
+    background-color: var(--ytmusic-cust-dark-background) !important;
+}
+
+/* [Player Queue] player queue item */
+ytmusic-player-queue-item {
+    background-color: var(--ytmusic-cust-dark-background) !important;
+}
+
+/* [Player Page - Up Next] up next tab */
+paper-tab.iron-selected.ytmusic-player-page {
+    color: var(--cust-ytmusic-medium-3) !important;
+}
+
+tp-yt-paper-tab.iron-selected.ytmusic-player-page {
+    color: var(--cust-ytmusic-medium-3) !important;
+}
+
+tp-yt-paper-tab.ytmusic-player-page {
+    color: var(--cust-ytmusic-medium-3) !important;
+}
+
+/* [Player Page - Up Next] up next line color */
+paper-tabs.ytmusic-player-page {
+    --paper-tabs-selection-bar-color: var(--cust-ytmusic-medium-3) !important;
+}
+
+#selectionBar.tp-yt-paper-tabs {
+    border-bottom: 2px solid var(--cust-ytmusic-medium-3) !important;
+}
+
+/* [Player Page - Up Next] ammended up next line color Update */
+tp-yt-paper-tabs.ytmusic-player-page {
+    border-bottom: 2px solid var(--cust-ytmusic-medium-3) !important;
+}
+
+/* [Player Queue] artist part in queue */
+yt-formatted-string.byline.style-scope.ytmusic-player-queue-item {
+    color: var(--cust-ytmusic-medium-1) !important;
+}
+
+/* [Player Queue] length of songs in queue */
+yt-formatted-string.duration.style-scope.ytmusic-player-queue-item {
+    color: var(--cust-ytmusic-light-4) !important;
+}
+
+/* [Player Bar] color of the play bar background */
+ytmusic-player-bar {
+    background: var(--cust-ytmusic-play-nav-color) !important;
+}
+
+/* [Player Bar] color of the progressbar slider */
+#progress-bar.ytmusic-player-bar {
+    --paper-slider-active-color: var(--ytmusic-color-white1) !important;
+}
+
+#progress-bar.ytmusic-player-bar[focused],
+ytmusic-player-bar:hover #progress-bar.ytmusic-player-bar {
+    --paper-slider-knob-color: var(--ytmusic-color-white1) !important;
+    --paper-slider-knob-start-color: var(--ytmusic-color-white1) !important;
+    --paper-slider-knob-start-border-color: var(
+        --ytmusic-color-white1
+    ) !important;
+}
+
+/* [Player Bar - Volume] volume slider */
+paper-slider#volume-slider {
+    --paper-slider-container-color: var(--cust-ytmusic-light-4) !important;
+    --paper-slider-active-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+    --paper-slider-knob-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+}
+
+/* [Player Bar - Volume] ammended volume slider color for Update */
+.volume-slider.ytmusic-player-bar,
+.expand-volume-slider.ytmusic-player-bar {
+    --paper-slider-container-color: var(--cust-ytmusic-light-4) !important;
+    --paper-slider-active-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+    --paper-slider-knob-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+}
+
+/* [Player Bar - Controls] play/pause/skip */
+paper-icon-button#play-pause-button {
+    --iron-icon-fill-color: var(--cust-ytmusic-playbutton-color) !important;
+}
+
+tp-yt-iron-icon#icon {
+    --iron-icon-fill-color: var(--cust-ytmusic-playbutton-color) !important;
+}
+
+.left-controls.ytmusic-player-bar paper-icon-button.ytmusic-player-bar,
+.left-controls.ytmusic-player-bar .spinner-container.ytmusic-player-bar,
+.toggle-player-page-button.ytmusic-player-bar {
+    --iron-icon-fill-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+}
+
+/* [Player Bar - Menu] nav bar menu icon */
+.menu.ytmusic-player-bar {
+    --iron-icon-fill-color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+}
+
+/* [Player Bar - Controls] nav bar right button icon colors */
+.right-controls-buttons.ytmusic-player-bar paper-icon-button.ytmusic-player-bar,
+ytmusic-player-expanding-menu.ytmusic-player-bar
+    paper-icon-button.ytmusic-player-bar {
+    --paper-icon-button_-_color: var(
+        --cust-ytmusic-tertiary-nav-button-color
+    ) !important;
+}
+
+/* [Playlist Controls] add to playlist button Update */
+.style-scope.yt-icon-button[aria-label="Add to playlist"] {
+    color: var(--cust-ytmusic-tertiary-nav-button-color);
+}
+
+/* [Carousel/Headers] color of titles */
+.title.ytmusic-carousel-shelf-basic-header-renderer,
+.title.ytmusic-immersive-header-renderer,
+.description.ytmusic-immersive-header-renderer {
+    color: var(--ytmusic-color-white1) !important;
+}
+
+/* [Now Playing] Now playing circle */
+div.content-wrapper.style-scope.ytmusic-play-button-renderer {
+    background: var(--cust-ytmusic-nowplaying-color) !important;
+}
+
+/* [Subscribe Button] subscribe button */
+ytmusic-subscribe-button-renderer {
+    --ytmusic-subscribe-button-color: var(
+        --cust-ytmusic-subscribe-color
+    ) !important;
+}
+
+yt-button-renderer[is-paper-button] {
+    background-color: var(--ytmusic-color-white1-alpha70) !important;
+}
+
+paper-icon-button {
+    --paper-icon-button_-_color: var(--ytmusic-color-white1) !important;
+}
+
+/* [Library Controls] add to library button */
+ytmusic-data-bound-top-level-menu-item.ytmusic-data-bound-menu-renderer:not(
+        :first-child
+    ) {
+    --yt-button-color: var(--ytmusic-color-white1) !important;
+    border: 1px solid var(--ytmusic-color-white1) !important;
+    border-radius: 5px !important;
+}
+
+/* [Playlist Controls] shuffle playlist button */
+yt-button-renderer.watch-button.ytmusic-menu-renderer {
+    color: var(--ytmusic-color-white1) !important;
+    background-color: var(--ytmusic-color-white1-alpha70) !important;
+}
+
+/* [Playlist Controls] edit playlist button */
+#top-level-buttons.ytmusic-menu-renderer
+    > .outline-button.ytmusic-menu-renderer,
+.edit-playlist-button.ytmusic-menu-renderer,
+ytmusic-toggle-button-renderer.ytmusic-menu-renderer {
+    --yt-button-color: var(--ytmusic-color-white1) !important;
+}
+
+/* [Badges] explicit badge */
+yt-icon.ytmusic-inline-badge-renderer {
+    color: var(--cust-ytmusic-tertiary-nav-button-color) !important;
+}
+
+/* [Headers] headers that aren't links */
+.title.ytmusic-carousel-shelf-basic-header-renderer,
+.title.ytmusic-immersive-header-renderer,
+.description.ytmusic-immersive-header-renderer {
+    color: var(--cust-ytmusic-header-text-1) !important;
+}
+
+/* [Headers] Songs header */
+.title.ytmusic-header-renderer {
+    color: var(--cust-ytmusic-header-text-2) !important;
+}
+
+yt-formatted-string.strapline.text.style-scope.ytmusic-carousel-shelf-basic-header-renderer {
+    color: var(--cust-ytmusic-light-4) !important;
+}
+
+/* [Links] Links */
+yt-formatted-string[has-link-only_]:not([force-default-style])
+    a.yt-simple-endpoint.yt-formatted-string {
+    color: var(--cust-ytmusic-main-text-1) !important;
+}
+
+yt-formatted-string[has-link-only_]:not([force-default-style])
+    a.yt-simple-endpoint.yt-formatted-string:hover {
+    color: var(--cust-ytmusic-light-2) !important;
+}
+
+/* [Carousel Controls] scroll left and right carousel buttons */
+.previous-items-button.ytmusic-carousel,
+.next-items-button.ytmusic-carousel {
+    background-color: var(--ytmusic-color-white1-alpha70) !important;
+    color: var(--ytmusic-color-black1) !important;
+}
+
+/* [Album Art] play button that pops up over album art to play immediately */
+.content-wrapper.ytmusic-play-button-renderer,
+ytmusic-play-button-renderer:hover
+    .content-wrapper.ytmusic-play-button-renderer,
+ytmusic-play-button-renderer:focus
+    .content-wrapper.ytmusic-play-button-renderer {
+    background: var(--ytmusic-color-white1-alpha70) !important;
+    --ytmusic-play-button-icon-color: var(--ytmusic-color-black1) !important;
+    --paper-spinner-color: var(--yt-spec-themed-blue) !important;
+}
+
+/* [Like Button] like button color */
+paper-icon-button.ytmusic-like-button-renderer {
+    color: var(--cust-ytmusic-medium-3) !important;
+}
+
+/* [Settings Menu] settings highlighted */
+.category-menu-item.iron-selected.ytmusic-settings-page {
+    background-color: var(--cust-ytmusic-medium-1) !important;
+}
+
+/* [Dropdown Menus] some dropdown menus */
+.dropdown-content {
+    background-color: var(--cust-ytmusic-dark-foreground) !important;
+}
+
+/* [Background] fix the latest ambient update overriding the colors */
+div.background-gradient.style-scope.ytmusic-browse-response {
+    background-image: linear-gradient(
+        to bottom,
+        var(--cust-ytmusic-dark-background),
+        var(--cust-ytmusic-dark-background)
+    ) !important;
+}
+
+* {
+    font-family: monospace !important;
+}
