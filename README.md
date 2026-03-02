@@ -15,7 +15,7 @@ the base template for this theme was originally created by [oceanicsquirrel](htt
 
 <div align="center">
 <h4>installation instructions</h4>
-use this theme with the <b>[peardesktop yt music app](https://github.com/pear-devs/pear-desktop)</b> (by pear-devs). 
+use this theme with the [peardesktop yt music app](https://github.com/pear-devs/pear-desktop) (by pear-devs). 
 <br>
 </div>
 
