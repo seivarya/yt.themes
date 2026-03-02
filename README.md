@@ -13,11 +13,8 @@ the base template for this theme was originally created by [oceanicsquirrel](htt
 
 <br>
 
-<div align="center">
 <h4>installation instructions</h4>
-use this theme with the [peardesktop yt music app](https://github.com/pear-devs/pear-desktop) (by pear-devs). 
-<br>
-</div>
+use this theme with the [peardesktop yt music app](https://github.com/pear-devs/pear-desktop) (by pear-devs).
 
 ##### pear desktop
 - **clone the repository:**
